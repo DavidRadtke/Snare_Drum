@@ -1,0 +1,21 @@
+Die Software "steuerung.py" enthält einen Bug in der Software und ein systematischer Fehler das System zum Abstürzen gebracht und den Motortreiber zerstört.
+
+Der wichtigste Teil zur Eliminierung des Problems ist die Optimierung der Software.
+Die Ausnahmebehandlung „exception handling“ wird verwendet um Fehler (exceptions) aufzufangen und um in eine tiefere Ebene im Programm zu springen. 
+Man verwendet „exception handling“ um bei Fehlern (oder unvorhergesehenen Ereignissen) das Programm zu reparieren oder um das Programm weiter ausführen zu können bzw. kontrolliert zu beenden.
+
+Für unseren Fall wird die Finalisierungs-Aktion auch genannt „Terminierungsaktion“ verwendet.
+Syntax:
+
+try:
+	Anweisungsblock A
+finally:
+	Anweisungsblock B
+
+Nach der „try“-Klausel folgt nun ein „finally“ –Klausel. 
+Das besondere bei der „Terminierungsaktion“ ist, unabhängig davon, ob ein exception in der try-Klausel vorhanden ist, wird die „finally“ – Klausel ausgeführt.
+Falls etwas unerwartetes in Anweisungsblock A passiert und auch wenn das Programm fehlerfrei durchlaufen wird, muss Anweisungsblock B ausgeführt werden.
+
+In Anweisungsblock A wird nun die komplette Ansteuerung der Snare-Drum realisiert.
+
+In Anweisungsblock B werden die Ausgänge der Motorplatine deaktiviert und der Fehler kann nicht mehr auftreten.

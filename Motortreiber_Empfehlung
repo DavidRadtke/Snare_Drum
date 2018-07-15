@@ -1,0 +1,12 @@
+
+
+Ich empfehle anstatt einem L2981 eine Pololu Dual MC33926 Motortreiberplatine.
+
+Folgende Vorteile sind hierdurch gegeben:
+
+Die hochwertige Platine kann je Output-Paar (Ein Spule) konstant 3A liefern und hält Stromspitzen von bis zu 5A stand. Hiermit haben wir einen deutlich größeren Spielraum im Bezug auf die Belastung.
+
+Die Platine wird direkt auf den Raspberry PI gesteckt und benötigt somit keine Verkabelung zwischen GPIO´s und Motortreiber-Einheit.
+
+Der Hersteller liefert mit der Hardware auch eine sehr simple , doch mächtige Python-Bibliothek. Mit ihr kann der Motor optimal angesteuert werden.
+
